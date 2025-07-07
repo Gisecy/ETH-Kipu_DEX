@@ -90,9 +90,11 @@ function swapExactTokensForTokens(
 4️⃣ Get Price
 
 function getPrice(address tokenA, address tokenB) external view returns (uint price);
-Returns price of one token in terms of the other based on reserves.
+
+*Returns price of one token in terms of the other based on reserves.
 
 * Result is scaled by 1e18.
+
 
 5️⃣ Calculate Output Amount
 
@@ -108,9 +110,12 @@ function getAmountOut(
 
 🔧 Testing and Verification
 
+
 The contract was verified against an external pre-deployed SwapVerifier contract available at:
 
+
 🔗 SwapVerifier on Sepolia Etherscan
+
 
 The verifier tests the full flow:
 
@@ -127,7 +132,9 @@ The verifier tests the full flow:
 
 
 🧪 Local Testing
+
 You can test this contract using Remix IDE with JavaScript VM or by deploying to a testnet like Sepolia.
+
 
 Example steps:
 
@@ -146,14 +153,19 @@ Example steps:
 📁 File Structure
 
 contracts/
+
 │
 ├── TokenA.sol          # ERC20 Token A (TA)
+
 ├── TokenB.sol          # ERC20 Token B (TB)
+
 ├── LiquidityToken.sol  # Pool token (LT)
+
 └── SimpleSwap.sol      # Main DEX contract
 
 
 🗓 Project Requirements
+
 
 ✅ All 5 functions implemented
 ✅ Compatible with SwapVerifier
@@ -165,6 +177,7 @@ contracts/
 
 
 📚 References
+
 - Uniswap V2 Smart Contract Docs
 
 - OpenZeppelin Contracts
@@ -174,11 +187,13 @@ contracts/
 
 
 🧾 License
+
 This project is licensed under the GPL-3.0 License.
 
 
 
 👩‍💻 Author
+
 Gisela Celeste Yede
 Final Project – Solidity Module 3
 Cohort 2025

@@ -53,7 +53,7 @@ function addLiquidity(
 * Mints LiquidityToken to the liquidity provider.
 
 
-2️⃣ Remove Liquidity
+### 2️⃣ Remove Liquidity
 
 function removeLiquidity(
     address tokenA,
@@ -70,7 +70,7 @@ function removeLiquidity(
 * Returns proportional amounts of TokenA and TokenB to the user.
 
 
-3️⃣ Swap Exact Tokens
+### 3️⃣ Swap Exact Tokens
 
 function swapExactTokensForTokens(
     uint amountIn,
@@ -87,7 +87,7 @@ function swapExactTokensForTokens(
 * Enforces slippage protection.
 
 
-4️⃣ Get Price
+### 4️⃣ Get Price
 
 function getPrice(address tokenA, address tokenB) external view returns (uint price);
 
@@ -96,7 +96,7 @@ function getPrice(address tokenA, address tokenB) external view returns (uint pr
 * Result is scaled by 1e18.
 
 
-5️⃣ Calculate Output Amount
+### 5️⃣ Calculate Output Amount
 
 function getAmountOut(
     uint amountIn,
@@ -108,7 +108,7 @@ function getAmountOut(
 
 
 
-🔧 Testing and Verification
+### 🔧 Testing and Verification
 
 
 The contract was verified against an external pre-deployed SwapVerifier contract available at:
@@ -131,7 +131,7 @@ The verifier tests the full flow:
 
 
 
-🧪 Local Testing
+### 🧪 Local Testing
 
 You can test this contract using Remix IDE with JavaScript VM or by deploying to a testnet like Sepolia.
 
@@ -150,7 +150,7 @@ Example steps:
 
 
 
-📁 File Structure
+### 📁 File Structure
 
 contracts/
 
@@ -164,7 +164,7 @@ contracts/
 └── SimpleSwap.sol      # Main DEX contract
 
 
-🗓 Project Requirements
+### 🗓 Project Requirements
 
 
 ✅ All 5 functions implemented
@@ -176,7 +176,7 @@ contracts/
 
 
 
-📚 References
+### 📚 References
 
 - Uniswap V2 Smart Contract Docs
 
@@ -186,13 +186,13 @@ contracts/
 
 
 
-🧾 License
+### 🧾 License
 
 This project is licensed under the GPL-3.0 License.
 
 
 
-👩‍💻 Author
+### 👩‍💻 Author
 
 Gisela Celeste Yede
 Final Project – Solidity Module 3
